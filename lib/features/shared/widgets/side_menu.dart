@@ -56,7 +56,7 @@ class SideMenuState extends ConsumerState<SideMenu> {
 
         const NavigationDrawerDestination(
             icon: Icon( Icons.home_outlined ), 
-            label: Text( 'Productos' ),
+            label: Text( 'Products' ),
         ),
 
 
@@ -67,7 +67,7 @@ class SideMenuState extends ConsumerState<SideMenu> {
 
         const Padding(
           padding: EdgeInsets.fromLTRB(28, 10, 16, 10),
-          child: Text('Otras opciones'),
+          child: Text('Other options'),
         ),
 
         
@@ -77,7 +77,7 @@ class SideMenuState extends ConsumerState<SideMenu> {
             onPressed: () {
               ref.read(authProvider.notifier).logout();
             },
-            text: 'Cerrar sesión'
+            text: 'Log Out'
           ),
         ),
 
